@@ -6,8 +6,5 @@ public class surname {
         int a = 3;
         System.out.println(a);
     }
-  //  int a;
-
-//    System.out.println("a");
 
 }
