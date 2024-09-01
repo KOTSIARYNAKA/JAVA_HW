@@ -12,13 +12,8 @@ public class Task4 {
         System.out.println("Введите число b:");
         int b = sc.nextInt();
 
-      //  int c = a != 0 ? b / a : 5;
-      //  System.out.println("Результат: " + c);
-
-     //   int d = a != 0 ? b / a : 5;
-    //    System.out.println("Результат: " + d);
-
-        int c = a++;
+        int c = a != 0 && a > 1 ? b / a : a *b;
         System.out.println("Результат: " + c);
+
     }
 }
