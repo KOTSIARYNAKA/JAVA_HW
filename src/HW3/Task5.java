@@ -14,9 +14,5 @@ public class Task5 {
     c++;
     c++;
         System.out.println("Результат: x = " + x + ", у = " + y + ", z = " + z + ", c = " + c);
-
-
-
-
     }
     }
