@@ -3,15 +3,53 @@ package HW1;
 public class surname {
     public static void main(String[] args) {
         System.out.println("Карпук");
-        int a = -2147483648;
-        System.out.println(a);
 
-        short b = 32767;
-        System.out.println(b);
-        byte c =-128;
-        System.out.println(c);
-        long d = -2147483648; // почему ограніченіе как на int?
-        System.out.println(d);
+        //поразрядные операции
+        //& логическое умножение - ОК
+        int a1 = 2; //010
+        int b1 = 5;//101
+        System.out.println(a1&b1); // результат 0
+
+        int a2 = 4; //100
+        int b2 = 5; //101
+        System.out.println(a2 & b2); // результат 4
+
+        // | логическое сложение - ОК
+        int a3 = 2; //010
+        int b3 = 5;//101
+        System.out.println(a3|b3); // результат 7 - 111
+        int a4 = 4; //100
+        int b4 = 5;//101
+        System.out.println(a4 | b4); // результат 5 - 101
+
+        // ^ (логическое исключающее ИЛИ)    вроде понятно =(
+        int number = 45; // 1001 Значение, которое надо зашифровать - в двоичной форме 101101
+        int key = 102; //Ключ шифрования - в двоичной системе 1100110
+        int encrypt = number ^ key; //Результатом будет число 1001011 или 75
+        System.out.println("Зашифрованное число: " +encrypt);
+
+        int decrypt = encrypt ^ key; // Результатом будет исходное число 45
+        System.out.println("Расшифрованное число: " + decrypt);
+
+        //~ (логическое отрицание)  ОК
+        byte с = 12;                 // 0000 1100
+        System.out.println(~с);     //  1111 0011   или -13
+
+        //Операции сдвига  ОК
+        int d = 4; //100
+        int f = 1; //001
+        System.out.println(d<<f ); // 1000 это 8
+
+        int x = 4; //100
+        int z = 1; //001
+        System.out.println(x>>z ); // 010 это 2
+
+        //подобную операцию можно использовать вместо непосредственного умножения или деления на два,
+        // так как операция сдвига на аппаратном уровне менее дорогостоящая операция в отличие
+        // от операции деления или умножения.
+
+
+
 
     }
 
