@@ -26,7 +26,6 @@ public class Task3v1 {
                     System.out.println("Результат деления равен 15");
                     break;
             }
-            ;
         }
         else {
             float x1 = x;
