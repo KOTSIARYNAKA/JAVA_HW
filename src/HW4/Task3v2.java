@@ -8,16 +8,15 @@ public class Task3v2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число x:");
         int x = sc.nextInt();
-        int result = 15 / x;
+        double result = (double) 15 / x;
         int i = 15 % x;
 
         switch (i) {
             case 0:
-                System.out.println("Результат деления равен " + result); // 1, 3, 5, 15
+                System.out.println("Результат деления равен " + (int) result); // 1, 3, 5, 15
+                break;
             default:
-                float x1 = x;
-                float NEWresult = 15 / x1;
-                System.out.println("Результат деления равен дробному числу " + NEWresult);
+                System.out.println("Результат деления равен дробному числу " + result);
         }
 
     }
