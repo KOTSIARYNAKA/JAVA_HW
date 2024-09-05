@@ -1,4 +1,4 @@
-package HW4;
+package HW4_if_switch;
 
 import java.util.Scanner;
 

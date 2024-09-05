@@ -1,4 +1,4 @@
-package HW5;
+package HW5_for;
 
 public class Task2for {
     public static void main(String[] args) {

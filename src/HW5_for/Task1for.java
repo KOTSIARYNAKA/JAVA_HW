@@ -1,4 +1,4 @@
-package HW5;
+package HW5_for;
 //Задание: Вывести числа от 1 до 100.
 public class Task1for {
     public static void main(String[] args) {
