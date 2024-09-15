@@ -33,7 +33,7 @@ public class Student {          //Переменные
     }
                              //getters
     public int getId(){
-        return id;
+    return id;
     }
     public String getSurname() {
         return surname;
@@ -74,5 +74,18 @@ public class Student {          //Переменные
     public void setGroup(String group){
         this.group = group;
     }
+
+    void information() {          //метод, который будет выдавать информацию по всем полям (назвать его information).
+        System.out.println("ID " + id);
+        System.out.println("Фамилия " + surname);
+        System.out.println("Имя " + name);
+        System.out.println("Дата рождения " + birth_date);
+        System.out.println("Факультет " + faculty);
+        System.out.println("Курс " + course);
+        System.out.println("Група " + group);
+    }
+
+
+
 
 }
