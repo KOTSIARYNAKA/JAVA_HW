@@ -31,7 +31,7 @@ public class Student {          //Переменные
 
     public Student() {       //конструктор без параметров
     }
-
+                             //getters
     public int getId(){
         return id;
     }
@@ -52,7 +52,7 @@ public class Student {          //Переменные
     }
     public String getGroup(){
         return group;
-    }
+    }                             //setters
     public void setId(int id){
         this.id = id;
     }
@@ -75,16 +75,4 @@ public class Student {          //Переменные
         this.group = group;
     }
 
-
-
-
-
-
-
-
-
-
-    public static void main(String[] args) {
-        Student student1 = new Student(1052, "Max", "Bush", "12 september 2000", "Historical", "History of RB", "AA-001");
-    }
 }
