@@ -9,5 +9,6 @@ public class DemoStudent {
 
         System.out.println("ID " +student1.getId() + ", ФИО "+student1.getSurname()+" " + student1.getName()+", Дата рождения: " + student1.getBirth_date()+", Факультет: " + student1.getFaculty()+", Курс: "+student1.getCourse()+", Группа: "+student1.getGroup());
 
+
     }
 }

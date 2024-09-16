@@ -29,7 +29,8 @@ public class Student {          //Переменные
         this.group = group;
     }
 
-    public Student() {       //конструктор без параметров
+    public Student() {
+                                  //конструктор без параметров
     }
                              //getters
     public int getId(){
@@ -53,9 +54,8 @@ public class Student {          //Переменные
     public String getGroup(){
         return group;
     }                             //setters
-    public void setId(int id){
-        this.id = id;
-    }
+
+    public void setId(int id){this.id = id;}
     public void setSurname(String surname){
         this.surname = surname;
     }
