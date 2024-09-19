@@ -35,7 +35,7 @@ public class Task1 {
             System.out.println("Строка не содержит подстроку \"Java\"");
         }
         if (text.indexOf("Java", 0) !=-1) {
-            System.out.println("Позиция подстроки в строке: " + text.indexOf("Java", 0));
+            System.out.println("Позиция подстроки \"Java\" в строке: " + text.indexOf("Java", 0));
         }
         else {
             System.out.println( "В строке отсутствует подстрока \"Java\"");
@@ -43,6 +43,7 @@ public class Task1 {
         System.out.println(text.replace('a', 'o'));   //Замена а на о
         System.out.println(text.toUpperCase());                      //К верхнему регистру
         System.out.println(text.toLowerCase());                      //К нижнему регистру
+        System.out.println(text.substring(0,text.indexOf("Java")) + text.substring(text.indexOf("Java")+4));
 
     }
 }
