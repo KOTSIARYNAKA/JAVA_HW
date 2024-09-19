@@ -43,7 +43,11 @@ public class Task1 {
         System.out.println(text.replace('a', 'o'));   //Замена а на о
         System.out.println(text.toUpperCase());                      //К верхнему регистру
         System.out.println(text.toLowerCase());                      //К нижнему регистру
-        System.out.println(text.substring(0,text.indexOf("Java")) + text.substring(text.indexOf("Java")+4));
-
+        if (text.indexOf("Java", 0) != -1) {
+            System.out.println(text.substring(0, text.indexOf("Java")) + text.substring(text.indexOf("Java") + 4));
+        }
+        else {
+            System.out.println("В тексте отсутствует слово \"Java\"");
+        }
     }
 }
