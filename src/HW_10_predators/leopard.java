@@ -1,4 +1,4 @@
-package HW10_predators;
+package HW_10_predators;
 
 public class leopard extends predators{
     @Override
