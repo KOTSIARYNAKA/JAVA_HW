@@ -1,6 +1,6 @@
 package HW9_animals;
 
-public class dog extends animal{
+public class Dog extends Animal {
     private String name;
     private String breed;
     private double weight;
@@ -13,8 +13,14 @@ public class dog extends animal{
     public void jump(){
         System.out.println(name + " прыгает");
     }
-    void animal_plays(){
+    @Override
+    void animalPlays(){
         System.out.println("Собака бегает за мячиком");
+    }
+
+    @Override
+    void makingSounds() {
+        System.out.println("sdhfsdkhfkfh");
     }
 
     public String getName() {

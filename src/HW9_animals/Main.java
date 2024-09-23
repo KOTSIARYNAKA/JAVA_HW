@@ -3,17 +3,21 @@ package HW9_animals;
 public class Main {
     public static void main(String[] args) {
 
-        dog dog = new dog ();
+        Animal dog1=new Dog();
+        dog1.makingSounds();
+
+        Dog dog = new Dog();
+        dog.makingSounds();
         dog.setName("Рэкс");
-        dog.animal_plays();
+        dog.animalPlays();
         dog.bite();
         dog.run();
         dog.jump();
 
-        bird bird = new bird();
-        bird.setBird_species("Воробей");
-        bird.hatch_chicks();
-        bird.making_sounds();
+        Bird bird = new Bird();
+        bird.setBirdSpecies("Воробей");
+        bird.hatchChicks();
+        bird.makingSounds();
         bird.peck();
         bird.sing();
 
