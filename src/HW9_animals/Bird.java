@@ -19,19 +19,19 @@ public class Bird extends Animal {
         System.out.println("Птица поет");
     }
 
-    public String getBird_species() {
+    public String getBirdSpecies() {
         return birdSpecies;
     }
 
-    public void setBirdSpecies(String bird_species) {
-        this.birdSpecies = bird_species;
+    public void setBirdSpecies(String birdSpecies) {
+        this.birdSpecies = birdSpecies;
     }
 
-    public double getMaximum_flight_altitude() {
+    public double getMaximumFlightAltitude() {
         return maximumFlightAltitude;
     }
 
-    public void setMaximum_flight_altitude(double maximumFlightAltitude) {
+    public void setMaximumFlightAltitude(double maximumFlightAltitude) {
         this.maximumFlightAltitude = maximumFlightAltitude;
     }
 }
