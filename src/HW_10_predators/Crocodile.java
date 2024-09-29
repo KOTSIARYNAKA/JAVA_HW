@@ -21,8 +21,8 @@ public class Crocodile extends Predators {
     }
     @Override
     public String toString(){
-        return "Крокодил. тип: " +this.type + " Среда обитания: " + this.habitat + " Максимальная скорость: " + this.maxSpeed + " Цвет: " + this.color
-                + " Тип охоты: " + huntingMethod() ;
+        return "Крокодил. тип: " +this.type + "\nСреда обитания: " + this.habitat + "\nМаксимальная скорость: " + this.maxSpeed + " км/ч\nЦвет: " + this.color
+                + "\nТип охоты: " + huntingMethod() ;
     };
 
 }
