@@ -21,7 +21,7 @@ public class Leopard extends Predators {
     }
     @Override
     public String toString(){
-        return "Леопард. тип: " +this.type + "\nСреда обитания: " + this.habitat + "\nМаксимальная скорость: " + this.maxSpeed + " км/ч\nЦвет: " + this.color
+        return "Леопард\nТип: " +this.type + "\nСреда обитания: " + this.habitat + "\nМаксимальная скорость: " + this.maxSpeed + " км/ч\nЦвет: " + this.color
                 + "\nТип охоты: " + huntingMethod() ;
     };
 
