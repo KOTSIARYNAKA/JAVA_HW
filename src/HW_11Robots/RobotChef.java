@@ -1,13 +1,13 @@
 package HW_11Robots;
 
-public class robotChef implements Robot{
+public class RobotChef implements Robot{
     String model;
     int powerConsumption;
     String countryOfOrigin;
     String cookingUnit;
     boolean isOn;
 
-    public robotChef(String model, int powerConsumption, String countryOfOrigin, String cookingUnit, boolean isOn) {
+    public RobotChef(String model, int powerConsumption, String countryOfOrigin, String cookingUnit, boolean isOn) {
         this.model = model;
         this.powerConsumption = powerConsumption;
         this.countryOfOrigin = countryOfOrigin;
