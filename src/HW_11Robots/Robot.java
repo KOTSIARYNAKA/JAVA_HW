@@ -1,6 +1,12 @@
 package HW_11Robots;
 
-public class Robot {
+public interface Robot {
+
+void createRobot();
+void repairRobot();
+void replaceTheMainUnit();
+void turnOnRobot();
+void turnOffRobot();
 
 
 }
