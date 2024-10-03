@@ -11,17 +11,31 @@ public class Zoo {
         zoo[2] = leopard1;
         // for (int i = 0; i < 3; i++) {
         //     System.out.println(zoo[i]);
-        Predators[] zooNew = new Predators[4];
-        for (int i = 0; i < 3; i++) {
-            zooNew[i] = zoo[i];
-        }
-            Crocodile crocodile2 = new Crocodile("река", 48.00, "коричневый", "африканский");
-            zooNew[3] = crocodile2;
-            for (int i = 0; i < 4; i++) {
-                System.out.println(zooNew[i]);
-            }
-        }
-
-//
+        Crocodile crocodile2 = new Crocodile("река", 48.00, "коричневый", "африканский");
+        zoo = addNewPlace(zoo);
+       System.out.println(zoo.length);
+        zoo[zoo.length-1] = crocodile2;
+        System.out.println(zoo[3]);
+        zoo = addNewPlace(zoo);
+        System.out.println(zoo.length);
     }
+
+
+
+//void addPredatorInZoo(Predators[] zoo) {
+  //    zoo[zoo.length-1] =
+
+//}
+
+
+
+//метод увеличения массива
+    public static Predators[] addNewPlace(Predators[] zoo) {
+        Predators[] addNewPlace = new Predators[zoo.length+1];
+        for (int i = 0; i < addNewPlace.length-1; i++) {
+            addNewPlace[i] = zoo[i];
+        }
+        return addNewPlace;
+    }
+}
 
