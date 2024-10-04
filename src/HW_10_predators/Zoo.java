@@ -1,5 +1,4 @@
 package HW_10_predators;
-//КИРИЛЛ!!! я еще не доделала.еще рано смотреть =)
 
 public class Zoo {
     public static void main(String[] args) {
@@ -13,21 +12,22 @@ public class Zoo {
         // for (int i = 0; i < 3; i++) {
         //     System.out.println(zoo[i]);
         Crocodile crocodile2 = new Crocodile("река", 48.00, "коричневый", "африканский");
-        zoo = addNewPlace(zoo);
-       System.out.println(zoo.length);
-        zoo[zoo.length-1] = crocodile2;
+        Predators newSettler = (Predators) crocodile2;
+        zoo = addNewPlace(zoo, newSettler);
         System.out.println(zoo[3]);
-        zoo = addNewPlace(zoo);
-        System.out.println(zoo.length);
+       // System.out.println(zoo.length);
     }
+
     //метод увеличения массива
-    public static Predators[] addNewPlace(Predators[] zoo) {
-        Predators[] addNewPlace = new Predators[zoo.length+1];
-        for (int i = 0; i < addNewPlace.length-1; i++) {
+    public static Predators[] addNewPlace(Predators[] zoo, Predators newSettler) {
+        Predators[] addNewPlace = new Predators[zoo.length + 1];
+        addNewPlace[addNewPlace.length - 1] = newSettler;
+        for (int i = 0; i < addNewPlace.length - 1; i++) {
             addNewPlace[i] = zoo[i];
         }
         return addNewPlace;
 
     }
 }
+
 
