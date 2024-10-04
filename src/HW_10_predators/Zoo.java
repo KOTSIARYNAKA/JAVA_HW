@@ -9,13 +9,15 @@ public class Zoo {
         zoo[0] = crocodile1;
         zoo[1] = wolf1;
         zoo[2] = leopard1;
-        // for (int i = 0; i < 3; i++) {
-        //     System.out.println(zoo[i]);
+
         Crocodile crocodile2 = new Crocodile("река", 48.00, "коричневый", "африканский");
-        Predators newSettler = (Predators) crocodile2;
+        Predators newSettler =  crocodile2;
         zoo = addNewPlace(zoo, newSettler);
-        System.out.println(zoo[3]);
-       // System.out.println(zoo.length);
+
+        Leopard leopard2 = new Leopard("джунгли", 60.00, "рыжий", "пустынный");
+        newSettler =  leopard2;
+        zoo = addNewPlace(zoo, newSettler);
+        System.out.println(zoo[4]);
     }
 
     //метод увеличения массива
