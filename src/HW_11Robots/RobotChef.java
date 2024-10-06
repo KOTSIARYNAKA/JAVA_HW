@@ -17,17 +17,17 @@ public class RobotChef implements Robot{
 
     @Override
     public void createRobot() {
-
+        System.out.println("Робот-повар: создан");
     }
 
     @Override
     public void repairRobot() {
-
+        System.out.println("Робот-повар: отремонтирован");
     }
 
     @Override
     public void replaceTheMainUnit() {
-
+        System.out.println("Робот-повар: основная деталь заменена");
     }
 
     @Override
@@ -40,5 +40,10 @@ public class RobotChef implements Robot{
     public void turnOffRobot() {
         isOn = false;
         System.out.println("Робот-повар выключен");
+    }
+
+    @Override
+    public void uniquePossibility() {
+        System.out.println("Робот-повар готовит");
     }
 }

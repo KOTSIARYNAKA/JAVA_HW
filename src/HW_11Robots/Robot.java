@@ -7,6 +7,7 @@ void repairRobot();
 void replaceTheMainUnit();
 void turnOnRobot();
 void turnOffRobot();
+void uniquePossibility();
 
 
 }
