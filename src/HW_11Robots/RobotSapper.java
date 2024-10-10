@@ -7,20 +7,19 @@ public class RobotSapper implements RobotEngineer{
     String material;
     boolean isOn;
 
-
     @Override
     public void createRobot() {
-
+        System.out.println("Робот-сапер: создан");
     }
 
     @Override
     public void repairRobot() {
-
+        System.out.println("Робот-сапер: отремонтирован");
     }
 
     @Override
     public void replaceTheMainUnit() {
-
+        System.out.println("Робот-сапер: заменена деталь");
     }
 
     @Override
@@ -35,11 +34,11 @@ System.out.println("Робот-сапер выключен");
 
     @Override
     public void uniquePossibility() {
-
+             System.out.println("Робот-сапер делает что-то уникальное");
     }
 
     @Override
     public void solvingAnEngineeringProblem() {
-
+        System.out.println("Робот-сапер решает инженерную задачу");
     }
 }
