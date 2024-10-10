@@ -25,12 +25,12 @@ public class RobotSapper implements RobotEngineer{
 
     @Override
     public void turnOnRobot() {
-
+        System.out.println("Робот-сапер включен");
     }
 
     @Override
     public void turnOffRobot() {
-
+System.out.println("Робот-сапер выключен");
     }
 
     @Override
