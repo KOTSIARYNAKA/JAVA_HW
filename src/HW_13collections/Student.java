@@ -1,4 +1,5 @@
 package HW_13collections;
+
 import java.util.*;
 
 public class Student {
@@ -21,6 +22,9 @@ public class Student {
         this.birthCity = birthCity;
         this.averageScore = averageScore;
     }
+
     @Override
-    public String toString() { return name + " " + surname + " (" + averageScore + ")"; }
+    public String toString() {
+        return name + " " + surname + " (" + averageScore + ")";
+    }
 }
