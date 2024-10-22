@@ -1,8 +1,11 @@
 package HW_15exeptions;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class UsePath {
     public static void main(String[] args) throws FileNotFoundException {
@@ -27,6 +30,17 @@ public class UsePath {
         System.out.println(textfile4.getParent());
         System.out.println(textfile3.getParent());
 
-
+        try {
+           String content = Files.readString(textfile3);
+            System.out.println(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            String content = Files.readString(textfile4);
+            System.out.println(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
