@@ -1,15 +1,14 @@
 package HW_17Lambda;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import com.sun.source.util.SourcePositions;
+
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class CityDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         List<City> cities = new ArrayList<>();
 
         cities.add(new City(1, "Tokio", 9300000, City.Continent.ASIA));
@@ -56,6 +55,26 @@ public class CityDemo {
         for (Map.Entry<String, City> entry : cityMap.entrySet()) {
             String name = entry.getKey();
             System.out.println("City Name: " + name);
+        }
+
+
+        double average = cities.stream()
+                .mapToInt(City::getPopulation)
+                .average()
+                .orElse(0.0);
+        System.out.println("Среднее количество населения " + average);
+
+
+        try {
+            if (!cityMap.containsKey("Oslo")) {
+                throw new Exception("The City Oslo not found in the collection.");
+            }
+            else {
+                System.out.println("The city of oslo is in the collection");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+
         }
 
 
