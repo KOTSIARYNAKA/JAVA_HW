@@ -29,8 +29,7 @@ public class Callable {
             try {
                 Random random = new Random();
                 long delayMillis = 1000 + random.nextInt(3000 - 1000 + 1);
-                // Задержка перед созданием файла
-                Thread.sleep(delayMillis);
+
 
 
                 File directory = new File(directoryPath);
@@ -64,6 +63,7 @@ public class Callable {
                             System.out.println("Файл уже существует: " + file.getName());
                         }
                     }
+                    Thread.sleep(delayMillis);
                 }
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
