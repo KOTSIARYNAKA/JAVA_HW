@@ -55,13 +55,13 @@ public class Callable {
                             pw.print(fileText());
                         }
                         pw.close();
-                        synchronized (System.out) {
+
                             System.out.println("Создан файл: " + file.getName() + "от задачи " + taskId);
-                        }
+
                     } else {
-                        synchronized (System.out) {
+
                             System.out.println("Файл уже существует: " + file.getName());
-                        }
+
                     }
                     Thread.sleep(delayMillis);
                 }
