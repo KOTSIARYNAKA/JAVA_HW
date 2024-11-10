@@ -25,6 +25,8 @@ public class Date {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd : hh:mm:ss a");
         LocalDateTime localDateTime = LocalDateTime.parse(d, formatter);
         System.out.println(localDateTime);
+        String f = localDateTime.format(formatter);
+        System.out.println(f);
 
 
         DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("eeee dd MMMM yyyy время: hh.mm.ss a");
