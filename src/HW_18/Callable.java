@@ -1,12 +1,12 @@
 package HW_18;
-
+/*
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 
-public class Callable {
+public abstract class Callable {
 
     Random rand = new Random();
     String str="";
@@ -75,6 +75,8 @@ public class Callable {
             };
 
     }
+
+    public abstract String call() throws Exception;
 }
 
-
+*/

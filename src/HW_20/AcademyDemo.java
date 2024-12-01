@@ -11,8 +11,8 @@ public class AcademyDemo {
 
             for (Method method : courseClass.getDeclaredMethods()) {
 
-                if (method.isAnnotationPresent(Academy.AcademyInfo.class)) {
-                    Academy.AcademyInfo academyInfo = method.getAnnotation(Academy.AcademyInfo.class);
+                if (method.isAnnotationPresent(AcademyInfo.class)) {
+                    AcademyInfo academyInfo = method.getAnnotation(AcademyInfo.class);
                     System.out.println("Метод: " + method.getName() + ", Год: " + academyInfo.year());
                 } else {
                     System.out.println("Метод: " + method.getName() + " не имеет аннотации AcademyInfo.");

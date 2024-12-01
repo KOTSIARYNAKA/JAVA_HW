@@ -2,7 +2,8 @@ package HW_20;
 
 
 public class AcademyMethods {
-    @Academy.AcademyInfo(year = 2024)
+
+        @AcademyInfo(year = 2024)
     public void annMethod(){
         System.out.println("Метод содержит аннотацию");
     }

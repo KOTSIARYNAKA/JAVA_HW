@@ -1,8 +1,9 @@
 package HW_18;
-
+/*
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -11,6 +12,9 @@ public class CallableDemo {
     public static void main(String[] args) throws IOException {
 
         ExecutorService executor = Executors.newFixedThreadPool(3);
+        List<Callable<String>> tasks = new ArrayList<>();
+
+
 
 
         for (int i = 0; i < 10; i++) {
@@ -29,3 +33,5 @@ public class CallableDemo {
         executor.shutdown();
     }
 }
+
+ */
