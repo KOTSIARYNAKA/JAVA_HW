@@ -1,4 +1,4 @@
-package HW_18;
+package qwe;
 /*
 
 import java.io.File;

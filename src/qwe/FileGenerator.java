@@ -1,4 +1,4 @@
-package HW_18;
+/*package HW_18;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class FileGenerator implements Callable<String> {
     private static final String FILE_PREFIX = "file_";
     private static final String FILE_EXTENSION = ".txt";
 
-    @Override
+ //   @Override
     public String call() throws Exception {
 
         String filename = FILE_PREFIX + System.currentTimeMillis() + FILE_EXTENSION;
@@ -72,3 +72,4 @@ public class FileGenerator implements Callable<String> {
         }
     }
 }
+*/
